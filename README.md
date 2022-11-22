@@ -1,29 +1,29 @@
-# Projeto-final-POO
+# 📱📞 Sistema para Gerenciamento de Planos Telefônicos
 
 
-### Definição das primeiras atividades.
+A ideia central desse projeto é desenvolver um sistema para armazenar dados dos clientes que contratam planos telefônicos de uma prestadora de serviços de telefonia móvel. Informações como nome, CPF, planos e forma de pagamento escolhida (entre outras) poderão ser registradas no sistema, que atuará como um banco de dados que salvará tudo isso e poderá ser utilizado tanto para consultar esses dados como atualizá-los.
 
-A ideia inicial do projeto é utilizar a API gráfica OpenGL na geração de formas simples para representação gráfica 3D com Orientação a Objetos na linguagem Python.
+### ⚙️ Funcionalidades
+- Cadastro de clientes
+- Contratar planos
+- Realizar recarga 
+- Realizar troca de planos
+- Emitir pagamentos usando mais de um método.
 
-As ferramentas a serem utilizadas serão:
+### ✅ Motivação do projeto 
+- O projeto busca aplicar os conhecimentos obtidos sobre orientação a objetos e o uso de design patterns com fins avaliativos para a disciplina de Programação Orientada a Objetos ministrada pelo Professor Thiago Sales.
 
-Linguagem de programação a ser utilizada:
+
+### 🔨 Técnicas e Tecnologias utilizadas
+
 - Python 3.10.7
+- Programação Orientada a Objetos 
+- Design Patterns
 
-API gráfica:
-- OpenGL
-
-Bibliotecas a serem usadas inicialmente:
-- moderngl 5.7.0
-- pygame 2.1.2
-- numpy 1.23.4
-- glcontext 2.3.7
-- PyGLM 2.5.7
-
-A dupla é formada pelos membros:
+### 👥 Autores
 
 1. João Victor Brito da Silva
-2. Maria Izabel Nunes de Franca
+2. Maria Izabel Nunes de França
 
-![python (3)](https://user-images.githubusercontent.com/96395061/200099185-22b56619-75c2-46d1-af93-5c97c7eb79ae.jpg)
+
 
