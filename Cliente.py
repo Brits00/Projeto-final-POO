@@ -14,7 +14,7 @@ class Cliente:
         self.__email = email
         self.__endereco = endereco
 
-
+    
     def calcularIdade(self,birthDate): 
         days_in_year = 365.2425    
         age = int((date.today() - birthDate).days / days_in_year) 
@@ -73,14 +73,14 @@ class Cliente:
         return self.__genero
 
     def setAno(self, generocliente: str):
-        self.__ano = generocliente
+        self.__genero = generocliente
 
     #Email
     def getEmail(self):
         return self.__email
 
     def setEmail(self, emailcliente: str):
-        self.__ano = emailcliente
+        self.__email = emailcliente
 
     #Endereço
     def getEndereco(self):
@@ -88,7 +88,11 @@ class Cliente:
 
     def setEndereco(self, enderecocliente: str):
         self.__endereco = enderecocliente
+    
+    def toString(self):
+        return f"{self.__nome} tem {self.calcularIdade(date(self.__ano,self.__mes,self.__dia))} anos de idade."
 
+    
 
     
 
