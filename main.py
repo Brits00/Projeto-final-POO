@@ -1,23 +1,27 @@
-from Cliente import *
+from cliente import Cliente
+from pessoa import Pessoa
 
 
-#str(input('Digite o nome do Cliente: '))
 #Instanciando Cliente.
-p1 = Cliente('João',"XXX",'82999841529',1998,2,25,'M','jjvbsilva@hotmail.com','Rua Sapotizeiro')
+p1 = Pessoa('João',"XXX",1998,2,25,'M','Rua Sapotizeiro')
 
+c1 = Cliente(p1.getNome(),p1.getCPF(),
+            p1.getAno(),p1.getMes(),p1.getDia(),
+            p1.getGenero(),p1.getEndereco(),
+            '82999841529','joao@gmail.com')
 #Obtendo dados do cliente:
 
 print(f'''
-    {p1.getNome()}
-    {p1.getCPF()}
-    {p1.getTelefone()}
-    {p1.getDatadeNascimento()}
-    {p1.getGenero()}
-    {p1.getEmail()}
-    {p1.getEndereco()}
-    {p1.toString()}'''
-)
+Obtendo dados do Cliente
 
+{c1.getNome()}
+{c1.getCPF()}
+{c1.getAno()}/{p1.getMes()}/{p1.getDia()}
+{c1.getGenero()}
+{c1.getEndereco()}
+{c1.getTelefone()}
+{c1.getEmail()}
+''')
 
 
 
