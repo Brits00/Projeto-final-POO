@@ -1,10 +1,10 @@
 from cliente import Cliente
 from pessoa import Pessoa
-
+from Grafics.menu import *
 
 #Instanciando Cliente.
-p1 = Pessoa('João',"XXX",1998,2,25,'M','Rua Sapotizeiro')
-
+p1 = Pessoa(app.getdata(),"XXX",1998,2,25,'M','Rua Sapotizeiro')
+    
 c1 = Cliente(p1.getNome(),p1.getCPF(),
             p1.getAno(),p1.getMes(),p1.getDia(),
             p1.getGenero(),p1.getEndereco(),
