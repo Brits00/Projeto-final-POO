@@ -2,13 +2,15 @@ from cliente import Cliente
 from pessoa import Pessoa
 from Grafics.menu import *
 
+
+
 #Instanciando Cliente.
-p1 = Pessoa(app.getdata(),"XXX",1998,2,25,'M','Rua Sapotizeiro')
+p1 = Pessoa(app.dic['Nome'],app.dic['CPF'],app.dic['Ano'],app.dic['Mes'],app.dic['Dia'],app.dic['Genero'],app.dic['Endereco'])
     
 c1 = Cliente(p1.getNome(),p1.getCPF(),
             p1.getAno(),p1.getMes(),p1.getDia(),
             p1.getGenero(),p1.getEndereco(),
-            '82999841529','joao@gmail.com')
+            app.dic['Telefone'],app.dic['Email'])
 #Obtendo dados do cliente:
 
 print(f'''
