@@ -8,7 +8,6 @@ A ideia central desse projeto é desenvolver um sistema para armazenar dados dos
 - Contratar planos
 - Realizar recarga 
 - Realizar troca de planos
-- Emitir pagamentos usando mais de um método.
 
 ### ✅ Motivação do projeto 
 - O projeto busca aplicar os conhecimentos obtidos sobre orientação a objetos e o uso de design patterns com fins avaliativos para a disciplina de Programação Orientada a Objetos ministrada pelo Professor Thiago Sales.
@@ -17,6 +16,8 @@ A ideia central desse projeto é desenvolver um sistema para armazenar dados dos
 ### 🔨 Técnicas e Tecnologias utilizadas
 
 - Python 3.10.7
+- Biblioteca Tkinter
+- Biblioteca Pillow
 - Programação Orientada a Objetos 
 - Design Patterns
 
