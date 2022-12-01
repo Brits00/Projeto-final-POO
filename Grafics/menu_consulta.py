@@ -1,23 +1,29 @@
-#https://www.tutorialspoint.com/python/tk_button.htm
+dic = {
+    'João': {'Nome': 'João', 'CPF': 'XY', 'Ano': 1998, 'Mes': 2, 'Dia': 25, 'Genero': 'M'}
+    ,'Bel': {'Nome': 'Bel', 'CPF': 'XX', 'Ano': 2001, 'Mes': 6, 'Dia': 20, 'Genero': 'F'}}
 
-#https://www.tutorialspoint.com/python/python_gui_programming.htm
-
-from tkinter import *
-import tkinter.messagebox as MessageBox
-from PIL import Image, ImageTk
-
-
-top = Tk()
-
-Lb1 = Listbox(top)
-Lb1.insert(1, "Python")
-Lb1.insert(2, "Perl")
-Lb1.insert(3, "C")
-Lb1.insert(4, "PHP")
-Lb1.insert(5, "JSP")
-Lb1.insert(6, "Ruby")
-
-Lb1.pack()
-top.mainloop()
+a = dic.get('João'.__getattribute__())
+print(a)
 
 
+
+
+
+
+
+
+
+# consulta = str(input('Digite o nome a ser consultado: '))
+# if consulta in dic:
+#     for b in dic.values():
+#         for c in b.values():
+#             if c == consulta:
+#                 d = c
+#                 print(*b.values())
+
+
+
+
+
+elif 'CPF' in dic:
+    pass

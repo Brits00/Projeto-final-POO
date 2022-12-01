@@ -1,6 +1,16 @@
 from datetime import date
 
-class Pessoa:
+class MenuSingleton(type):
+    __instances = {}
+    def __call__(cls, *args,**kwds):
+        if cls not in cls.__instances:
+            instance = super().__call__(*args,**kwds)
+            cls.__instances[cls] = instance
+
+        return cls.__instances[cls]
+
+
+class Pessoa(metaclass=MenuSingleton):
     def __init__(self, nome: str, cpf: str, ano: int, mes: int, dia: int, genero: str, endereco: str) -> None:
         self.__nome = nome
         self.__cpf = cpf
@@ -75,3 +85,9 @@ class Pessoa:
    
     def toString(self):
         return f"{self.__nome} tem {self.calcularIdade(date(self.__ano,self.__mes,self.__dia))} anos de idade."
+
+p1 = Pessoa('joao','xxx',1998,2,25,'M','Rua Sapotizeiro')
+p2 = Pessoa('bel','yyy',2001,6,20,'F','AV Elvira')
+
+print(p1.getNome())
+print(p2.getNome())
