@@ -133,7 +133,7 @@ class Menu:
                 MessageBox.showwarning("Os dados consultados são: ",f"Consulta vazia")
             else:
                 MessageBox.showerror("Os dados consultados são: ",f"Cadastro de {nome} não localizado")
-        print(nome)
+
     
     def getdataCPF(self):
         cpf = self.buscacpf.get()
@@ -144,8 +144,7 @@ class Menu:
                     for dados in key.items():
                         print(*dados)
                     aux = key.values()
-                    MessageBox.showinfo("Os dados consultados são: ",
-                    self.__dic.get(cpf))
+                    MessageBox.showinfo("Os dados consultados são: ",key.items())
                     break    
         if aux != None:
             pass               
@@ -285,34 +284,7 @@ class Menu:
         self.__menu3.destroy()
 
     def getName(self):
-        return self.inputnome.get()
-
-    # def getCPF(self):
-    #     return self.__dic['CPF']
-
-    # def getAno(self):
-    #     return self.__dic['Ano']
-
-    # def getMes(self):
-    #     return self.__dic['Mes']
-
-    # def getDia(self):
-    #     return self.__dic['Dia']
-
-    # def getGenero(self):
-    #     return self.__dic['Genero']
-
-    # def getEndereco(self):
-    #     return self.__dic['Endereco']
-
-    # def getEmail(self):
-    #     return self.__dic['Email']
-
-    # def getTelefone(self):
-    #     return self.__dic['Telefone']
-    
-    # def getPlano(self):
-    #     return self.__dic['Plano']
+        return self.__dic['Nome']
 
 app = Menu()
 app.final()

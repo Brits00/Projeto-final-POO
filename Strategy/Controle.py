@@ -1,4 +1,4 @@
-from TipoPlanos.Iplanos import PlanosInterface
+from Strategy.TipoPlanos.Iplanos import PlanosInterface
 
 class Controle(PlanosInterface):
     def __init__(self, saldo: float, fatura: bool, adimplente: bool) -> None:
@@ -6,7 +6,7 @@ class Controle(PlanosInterface):
         self.__fatura = fatura 
         self.__adimplente = adimplente
 
-    def get_saldo(self) -> float:
+    def get_saldo(self) -> int:
         return self.__saldo
      
     def get_fatura(self) -> bool:
@@ -14,3 +14,5 @@ class Controle(PlanosInterface):
  
     def get_adimplente(self) -> bool: 
         return self.__adimplente
+
+controle = Controle(30,True,True)

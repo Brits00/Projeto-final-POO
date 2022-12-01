@@ -86,8 +86,3 @@ class Pessoa(metaclass=MenuSingleton):
     def toString(self):
         return f"{self.__nome} tem {self.calcularIdade(date(self.__ano,self.__mes,self.__dia))} anos de idade."
 
-p1 = Pessoa('joao','xxx',1998,2,25,'M','Rua Sapotizeiro')
-p2 = Pessoa('bel','yyy',2001,6,20,'F','AV Elvira')
-
-print(p1.getNome())
-print(p2.getNome())
